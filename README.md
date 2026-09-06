@@ -2,22 +2,7 @@
 This repository gives the implementation for self-training with prototype-based pcll.
 
 ## Abstract
-Partial label learning assumes that each training instance is labeled with a candidate label set,
-where the true label is concealed. In some real-world scenario, however, it is laborious to collect
-candidate labels from a long list of classes for the whole huge-size dataset. Instead, a common
-case is that each training instance in part of the dataset is specified with one incorrect class termed
-as complementary label while others are partially labeled, which well suits more real-world data
-annotation. For this article, we formulate such task as a novel learning framework dubbed partial-
-complementary label learning (PCLL) and propose prototype-based PCLL method by adopting
-self-training technique to handle this particular scenario. The working principle is to learn a
-classifier from partially labeled instances with prototype-based label disambiguation, which is
-then used to assign pseudo-labels to complementarily labeled instances based on the model’s
-output. When the confidence-over-threshold pseudo-label is not equal to the corresponding com-
-plementary label, instance with the produced label is used to train a new classifier coupling with
-the partially labeled instances. In this manner, the pseudo-labeled instances are gradually used
-to enrich the training set. As the number of iteration increases, they become more important
-and the label assignment becomes more reliable in identifying the true label. Experiments on
-benchmark datasets distinctly valid the efficiency of our proposed method
+Partial label learning assumes that each training instance is labeled with a candidate label set, where the true label is concealed. In some real-world scenario, however, it is laborious to collect candidate labels from a long list of classes for the whole huge-size dataset. Instead, a common case is that each training instance in part of the dataset is specified with one incorrect class termed as complementary label while others are partially labeled, which well suits more real-world data annotation. For this article, we formulate such task as a novel learning framework dubbed partial-complementary label learning (PCLL) and propose prototype-based PCLL method by adopting self-training technique to handle this particular scenario. The working principle is to learn a classifier from partially labeled instances with prototype-based label disambiguation, which is then used to assign pseudo-labels to complementarily labeled instances based on the model’s output. When the confidence-over-threshold pseudo-label is not equal to the corresponding complementary label, instance with the produced label is used to train a new classifier coupling with the partially labeled instances. In this manner, the pseudo-labeled instances are gradually used to enrich the training set. As the number of iteration increases, they become more important and the label assignment becomes more reliable in identifying the true label. Experiments on benchmark datasets distinctly valid the efficiency of our proposed method
 
 ## Prerequisite
 The requirements are in requirements.txt. 
