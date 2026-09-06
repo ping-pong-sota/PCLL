@@ -5,10 +5,10 @@ This repository gives the implementation for self-training with prototype-based 
 
 
 ## Prerequisite
-
+The requirements are in requirements.txt. 
 
 ## Usage
-
+Train the model by running the following command directly. 
 
 ## Baseline
 1.CAVL: Zhang F, Feng L, Han B, et al. Exploiting class activation value for partial-label learning[C]//International conference on learning representations. 2021. [code] https://github.com/SII-Ferenas/CAVL
