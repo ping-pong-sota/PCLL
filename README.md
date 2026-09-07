@@ -10,7 +10,7 @@ The requirements are in requirements.txt.
 ## Usage
 Train the model by running the following command directly.
 
-python -u train_pll_com_cifar_single.py --exp-dir experiment --prot_start 1 --lr 0.001 --wd 1e-5 --cosine --epochs 250 --proto_m 0.99 --partial_rate 0.1 --gpu 1
+python -u train_pll_com_cifar_single.py --exp-dir experiment --prot_start 1 --lr 0.001 --wd 1e-5 --cosine --epochs 250 --proto_m 0.99 --partial_rate 0.1 
 
 ## Baseline
 1.CAVL: Zhang F, Feng L, Han B, et al. Exploiting class activation value for partial-label learning[C]//International conference on learning representations. 2021. [code] https://github.com/SII-Ferenas/CAVL
